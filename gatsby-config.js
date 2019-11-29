@@ -4,7 +4,7 @@ module.exports = {
     description: `I might talk about programming`,
     author: `Agastya Chandrakant`,
     email: `acagastya@outlook.com`,
-    twitter: `axagastya`,
+    twitter: `@axagastya`,
     github: `acagastya`,
   },
   plugins: [
