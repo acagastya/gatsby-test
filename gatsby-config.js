@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        pages: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -42,4 +42,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
