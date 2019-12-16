@@ -13,7 +13,11 @@ function Footer({ author, email, github, twitter }) {
           <nav aria-label="Social Menu">
             <ul className="social-menu">
               <li>
-                <a href={`mailto:${email}`} target="_blank" rel="noopener">
+                <a
+                  href={`mailto:${email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="screen-reader">Contact via Email</span>
                   <svg
                     className="icon"
@@ -32,7 +36,7 @@ function Footer({ author, email, github, twitter }) {
                 <a
                   href={`https://twitter.com/${twitter}`}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <span className="screen-reader">
                     Open Twitter account in new tab
@@ -53,7 +57,7 @@ function Footer({ author, email, github, twitter }) {
                 <a
                   href={`https://github.com/${github}`}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <span className="screen-reader">
                     Open Github account in new tab
