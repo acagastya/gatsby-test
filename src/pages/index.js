@@ -13,22 +13,22 @@ function IndexPage({ data }) {
         <div className="home-sections">
           <section id="recent-posts" className="home-section">
             <header>
-              <h2 class="home-section-title title">Blog Posts</h2>
+              <h2 className="home-section-title title">Blog Posts</h2>
             </header>
             <div className="list-container">
               <ul className="list">
                 {edges.map(edge => {
                   const { date, path, title } = edge.node.frontmatter;
-                  const parsedDate = moment(date).format('YYYY, MMM DD');
+                  const momentDate = moment(date);
+                  const parsedDate = momentDate.format('YYYY, MMM DD');
+                  const ISODate = momentDate.toISOString();
                   return (
-                    <li className="list-item">
+                    <li className="list-item" key={path}>
                       <article>
                         <div className="meta">
                           <span>
                             <span className="screen-reader">Posted on </span>
-                            <time datetime="2019-10-28T00:00:00Z">
-                              {parsedDate}
-                            </time>
+                            <time dateTime={ISODate}>{parsedDate}</time>
                           </span>
                         </div>
                         <header className="list-item-header">
