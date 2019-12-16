@@ -8,7 +8,9 @@ function NotFoundPage() {
     <Layout>
       <SEO title="404: Not found" />
       <h1>Article not found.</h1>
-      <h4>It is okay.</h4>
+      <h4>
+        <u>It is okay.</u>
+      </h4>
       <blockquote>
         <p>
           [The roads] moved with the land, you know? It rose, it fell, it
