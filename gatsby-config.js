@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'Agastya',
@@ -25,8 +27,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages`,
+        name: 'posts',
+        path: path.join(__dirname, 'src', 'posts'),
       },
     },
     'gatsby-plugin-react-helmet',
