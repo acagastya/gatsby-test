@@ -720,6 +720,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.7.6":
+  version "7.7.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.6.tgz#d18c511121aff1b4f2cd1d452f1bac9601dd830f"
+  integrity sha512-BWAJxpNVa0QlE5gZdWjSxXtemZyZ9RmrmVozxt3NUXeZhVIJ5ANyqmMc0JDrivBZyxUuQvFxlvH4OWWOogGfUw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.7.4.tgz#428a7d9eecffe27deac0a98e23bf8e3675d2a77b"
@@ -2151,6 +2158,11 @@ bluebird@^3.5.5, bluebird@^3.7.1:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
 
+bluebird@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+
 bmp-js@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/bmp-js/-/bmp-js-0.1.0.tgz#e05a63f796a6c1ff25f4771ec7adadc148c07233"
@@ -2877,7 +2889,7 @@ command-exists@^1.2.2:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
   integrity sha512-PM54PkseWbiiD/mMsbvW351/u+dafwTJ0ye2qB60G1aGQP9j3xK2gmMDc+R34L3nDtx4qMCitXT75mkbkGJDLw==
 
-commander@^2.11.0, commander@^2.20.0:
+commander@^2.11.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -5134,6 +5146,14 @@ gatsby-core-utils@^1.0.21:
   dependencies:
     ci-info "2.0.0"
 
+gatsby-core-utils@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.24.tgz#b2b39440ad4f717de1b68f02d139130f844bdb32"
+  integrity sha512-2GPJVnqVTDO1xyZWR2lITilGTzw/hP3EE5Lq/QEjvmOPX6sLes1Gd3mTewd0PpOVZkjzn93u7kZKWEGidQO2vw==
+  dependencies:
+    ci-info "2.0.0"
+    node-object-hash "^2.0.0"
+
 gatsby-graphiql-explorer@^0.2.29:
   version "0.2.29"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.2.29.tgz#e7bd91b120f99f64547f677dc9460683dbe742e8"
@@ -5251,6 +5271,15 @@ gatsby-react-router-scroll@^2.1.17:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
+gatsby-remark-katex@^3.1.20:
+  version "3.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-katex/-/gatsby-remark-katex-3.1.20.tgz#4e4a5d9ab7055f5e11c48f0ee5e153b4a6ca66a0"
+  integrity sha512-etLKHMqOGGdiYI56m2l3rRyk83EqEkiAQSeO/lutQdVa5yjK9DkMsJk2pcvfUY4LWu6/+W0Xw4dBw5P75uKbfw==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+    remark-math "^1.0.6"
+    unist-util-visit "^1.4.1"
+
 gatsby-source-filesystem@^2.1.39:
   version "2.1.39"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.39.tgz#5d0ae6e532e31378b52101ee82a1aae8941c1bc2"
@@ -5295,14 +5324,14 @@ gatsby-telemetry@^1.1.40:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-transformer-remark@^2.6.38:
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.6.38.tgz#5fe340d1ad7f0ef1a615ccc455c70dfdb1858681"
-  integrity sha512-ZK/wTX7pbi0G2zqxSW4aP6Jyou87bNzGiKkbSj9XAlU36G4JtXIMgAP76cK5OA7NNssWyBwVTgg1T3cPW7wDNA==
+gatsby-transformer-remark@^2.6.42:
+  version "2.6.42"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.6.42.tgz#c1a571fdca2c6d8e3527df3b56709b46c7b8e8d8"
+  integrity sha512-GJtzLU0jSNrKUTrkaXRzfXLNP4i6bPtfaJadr33FhP1FPDBGw8O0OQ3/tekM/z3Tjb6/1hL3BebPyuQ15yWI/A==
   dependencies:
-    "@babel/runtime" "^7.7.4"
-    bluebird "^3.7.1"
-    gatsby-core-utils "^1.0.21"
+    "@babel/runtime" "^7.7.6"
+    bluebird "^3.7.2"
+    gatsby-core-utils "^1.0.24"
     gray-matter "^4.0.2"
     hast-util-raw "^4.0.0"
     hast-util-to-html "^4.0.1"
@@ -7252,6 +7281,13 @@ jsx-ast-utils@^2.2.1:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
+katex@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
+  integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
+  dependencies:
+    commander "^2.19.0"
+
 keyv@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.0.0.tgz#44923ba39e68b12a7cec7df6c3268c031f2ef373"
@@ -8254,6 +8290,11 @@ node-libs-browser@^2.2.1:
     url "^0.11.0"
     util "^0.11.0"
     vm-browserify "^1.0.1"
+
+node-object-hash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.0.0.tgz#9971fcdb7d254f05016bd9ccf508352bee11116b"
+  integrity sha512-VZR0zroAusy1ETZMZiGeLkdu50LGjG5U1KHZqTruqtTyQ2wfWhHG2Ow4nsUbfTFGlaREgNHcCWoM/OzEm6p+NQ==
 
 node-pre-gyp@^0.12.0:
   version "0.12.0"
@@ -10223,6 +10264,13 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
+remark-math@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/remark-math/-/remark-math-1.0.6.tgz#49eb3dd15d298734c9ae21673115389793af4d1b"
+  integrity sha512-I43wU/QOQpXvVFXKjA4FHp5xptK65+5F6yolm8+69/JV0EqSOB64wURUZ3JK50JtnTL8FvwLiH2PZ+fvsBxviA==
+  dependencies:
+    trim-trailing-lines "^1.1.0"
+
 remark-parse@^6.0.0, remark-parse@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-6.0.3.tgz#c99131052809da482108413f87b0ee7f52180a3a"
@@ -11805,7 +11853,7 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-trim-trailing-lines@^1.0.0:
+trim-trailing-lines@^1.0.0, trim-trailing-lines@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/trim-trailing-lines/-/trim-trailing-lines-1.1.2.tgz#d2f1e153161152e9f02fabc670fb40bec2ea2e3a"
   integrity sha512-MUjYItdrqqj2zpcHFTkMa9WAv4JHTI6gnRQGPFLrt5L9a6tRMiDnIqYl8JBvu2d2Tc3lWJKQwlGCp0K8AvCM+Q==
