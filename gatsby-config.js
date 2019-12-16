@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Agastya`,
-    description: `I might talk about programming`,
-    author: `Agastya Chandrakant`,
-    email: `acagastya@outlook.com`,
-    twitter: `@axagastya`,
-    github: `acagastya`,
+    title: 'Agastya',
+    description: 'I might talk about computation and programming.',
+    author: 'Agastya Chandrakant',
+    email: 'acagastya@outlook.com',
+    twitter: '@axagastya',
+    github: 'acagastya',
   },
   plugins: [
     `gatsby-transformer-remark`,
