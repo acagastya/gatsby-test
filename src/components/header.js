@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Header({ description, siteTitle }) {
+function Header({ description, siteTitle, showHeader }) {
   return (
     <header id="header" className="header-container">
       <div className="header site-header">
@@ -21,13 +21,15 @@ function Header({ description, siteTitle }) {
           </ul>
         </nav>
 
-        <div className="header-info">
-          <p className="site-title title">
-            <Link to="/">{siteTitle}</Link>
-          </p>
+        {showHeader && (
+          <div className="header-info">
+            <p className="site-title title">
+              <Link to="/">{siteTitle}</Link>
+            </p>
 
-          <p className="site-description subtitle">{description}</p>
-        </div>
+            <p className="site-description subtitle">{description}</p>
+          </div>
+        )}
       </div>
     </header>
   );

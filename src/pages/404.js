@@ -7,10 +7,7 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <h1>Article not found.</h1>
-      <h4>
-        <u>It is okay.</u>
-      </h4>
+      <h1>Article not found. &nbsp;It is okay.</h1>
       <blockquote>
         <p>
           [The roads] moved with the land, you know? It rose, it fell, it
@@ -22,7 +19,7 @@ function NotFoundPage() {
         </p>
         <p>
           <cite>
-            &mdash; Sally, <em>Cars (2006)</em>
+            &mdash; Sally Carrera, <em>Cars (2006)</em>
           </cite>
         </p>
       </blockquote>

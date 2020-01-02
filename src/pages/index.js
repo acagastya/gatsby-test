@@ -20,7 +20,7 @@ function IndexPage({ data }) {
                 {edges.map(edge => {
                   const { date, path, title } = edge.node.frontmatter;
                   const momentDate = moment(date);
-                  const parsedDate = momentDate.format('YYYY, MMM DD');
+                  const parsedDate = momentDate.format('MMM DD, YYYY');
                   const ISODate = momentDate.toISOString();
                   return (
                     <li className="list-item" key={path}>

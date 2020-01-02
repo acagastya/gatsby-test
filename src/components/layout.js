@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import Header from './header';
 import Footer from './footer';
 
-function Layout({ children }) {
+function Layout({ children, showHeader = true }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,10 +31,14 @@ function Layout({ children }) {
 
   return (
     <div className="site">
-      <Link to="#main" className="screen-reader">
+      <a href="#main" className="screen-reader">
         Skip to Content
-      </Link>
-      <Header siteTitle={title} description={description} />
+      </a>
+      <Header
+        siteTitle={title}
+        description={description}
+        showHeader={showHeader}
+      />
       <main className="main" id="main">
         {children}
       </main>
