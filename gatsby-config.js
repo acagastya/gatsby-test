@@ -14,7 +14,16 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-numbered-footnotes',
+          {
+            resolve: 'gatsby-remark-footnotes',
+            options: {
+              footnoteBackRefAnchorStyle: `text-decoration: none;`,
+              footnoteBackRefDisplay: 'inline',
+              footnoteBackRefInnerText: '[return]',
+              footnoteBackRefPreviousElementDisplay: 'inline',
+              useFootnoteMarkerText: false,
+            },
+          },
           {
             resolve: 'gatsby-remark-katex',
             options: {
