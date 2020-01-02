@@ -6,7 +6,7 @@ module.exports = {
     description: 'I might talk about computation and programming.',
     author: 'Agastya Chandrakant',
     email: 'acagastya@outlook.com',
-    twitter: '@axagastya',
+    twitter: '@acagastya',
     github: 'acagastya',
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, 'src', 'images'),
       },
     },
     'gatsby-transformer-sharp',
@@ -44,11 +44,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Agastya',
+        short_name: `Agastya's place to explain`,
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#324996',
+        theme_color: '#298BCC',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
