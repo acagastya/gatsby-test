@@ -76,8 +76,8 @@ exports.createPages = function({ graphql, actions }) {
             component: blogPostTemplate,
             context: {
               pathSlug: node.frontmatter.path,
-              prev: index == 0 ? null : posts[index - 1].node,
               next: index == posts.length - 1 ? null : posts[index + 1].node,
+              prev: index == 0 ? null : posts[index - 1].node,
             },
           });
           resolve();

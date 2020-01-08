@@ -1,4 +1,5 @@
 ---
+categories: ['Lesson']
 cover: 'https://images.unsplash.com/photo-1523540939399-141cbff6a8d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=13b5734db042709c526879c4a5663c85'
 date: '2018-06-03'
 draft: false

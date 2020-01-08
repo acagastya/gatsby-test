@@ -5,7 +5,8 @@ import moment from 'moment';
 require(`katex/dist/katex.min.css`);
 
 function Template({ data, pageContext }) {
-  const { prev, next } = pageContext;
+  const { categories, tags } = data.markdownRemark.frontmatter;
+  const { next, prev } = pageContext;
   const { email, github, twitter } = data.site.siteMetadata;
   const { markdownRemark } = data;
   const { html } = markdownRemark;
@@ -16,12 +17,14 @@ function Template({ data, pageContext }) {
   return (
     <Layout showHeader={false}>
       <Article
+        categories={categories}
         email={email}
         github={github}
         html={html}
         ISODate={ISODate}
         lang={lang}
         parsedDate={parsedDate}
+        tags={tags}
         title={title}
         twitter={twitter}
       />
@@ -35,8 +38,10 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
+        categories
         date
         lang
+        tags
         title
       }
     }
@@ -51,12 +56,14 @@ export const query = graphql`
 `;
 
 function Article({
+  categories,
   email,
   github,
   html,
   ISODate,
   lang,
   parsedDate,
+  tags,
   title,
   twitter,
 }) {
@@ -74,7 +81,7 @@ function Article({
         className="entry-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <Footer />
+      <Footer categories={categories} tags={tags} />
     </article>
   );
 }
@@ -158,22 +165,46 @@ function EntryNavContainer({ next, prev }) {
   );
 }
 
-function Footer() {
+function Footer({ categories, tags }) {
   return (
     <footer className="entry-footer-container">
       <div className="entry-footer">
-        <div className="categories">
-          <span className="taxonomyTerm-icon">
-            <CategorySVG />
-          </span>
-          <span className="screen-reader">Categories: </span>
-        </div>
-        <div className="tags">
-          <span className="taxonomyTerm-icon">
-            <TagSVG />
-          </span>
-          <span className="screen-reader">Tags: </span>
-        </div>
+        {categories.length ? (
+          <div className="categories">
+            <span className="taxonomyTerm-icon">
+              <CategorySVG />
+            </span>
+            <span className="screen-reader">Categories: </span>
+            {categories.map((category, index) => {
+              return (
+                <React.Fragment key={category}>
+                  <Link className="category" to={`/categories/${category}`}>
+                    {category}
+                  </Link>
+                  {index < categories.length - 1 ? ', ' : ' '}
+                </React.Fragment>
+              );
+            })}
+          </div>
+        ) : null}
+        {tags.length ? (
+          <div className="tags">
+            <span className="taxonomyTerm-icon">
+              <TagSVG />
+            </span>
+            <span className="screen-reader">Tags: </span>
+            {tags.map((tag, index) => {
+              return (
+                <React.Fragment key={tag}>
+                  <Link className="tag" to={`/tags/${tag}`}>
+                    {tag}
+                  </Link>
+                  {index < tags.length - 1 ? ', ' : ' '}
+                </React.Fragment>
+              );
+            })}
+          </div>
+        ) : null}
       </div>
     </footer>
   );

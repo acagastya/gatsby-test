@@ -1,4 +1,5 @@
 ---
+categories: []
 cover: 'https://images.unsplash.com/photo-1503525148566-ef5c2b9c93bd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2018-12-04'
 draft: true

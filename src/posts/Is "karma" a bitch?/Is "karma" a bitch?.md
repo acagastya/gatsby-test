@@ -1,4 +1,5 @@
 ---
+categories: ['Karma', 'Lesson']
 cover: 'https://images.unsplash.com/photo-1530517903273-3d60130ce0de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2019-01-19'
 draft: false
@@ -8,7 +9,7 @@ However, the process of adoption distorts the words, many-a-times. "Pundit" does
 lang: 'en'
 page: 'false'
 path: '/is-karma-a-bitch'
-tags: ['Opportunity', 'Religion', 'Essay']
+tags: []
 title: 'Is "karma" a bitch?'
 ---
 
@@ -187,5 +188,3 @@ Don't say "Karma is a bitch", be accountable for your actions as your mind would
 Do you still "believe in karma" or do you understand the state of mind is the best reward and the endless cycle of re-incarnation ends with you gaining the everlasting peace of mind, or when you die.
 
 Use your conscience to decide what your goal is.
-
----

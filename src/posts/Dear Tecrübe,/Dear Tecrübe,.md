@@ -1,4 +1,5 @@
 ---
+categories: []
 cover: 'http://hanabi.in/content/images/2018/12/kevin-gent-219197-unsplash.jpg'
 date: '2018-06-10'
 draft: false
