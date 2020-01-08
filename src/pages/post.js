@@ -12,9 +12,6 @@ function Blog({ data }) {
       <div className="home-sections-container">
         <div className="home-sections">
           <section id="recent-posts" className="home-section">
-            <header>
-              <h2 className="home-section-title title">Blog Posts</h2>
-            </header>
             <div className="list-container">
               <ul className="list">
                 {edges.map(edge => {
