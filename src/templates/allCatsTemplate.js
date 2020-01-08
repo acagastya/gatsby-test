@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 function AllCatsTemplate({ pageContext }) {
   const { postsByCat, cats } = pageContext;
@@ -8,6 +9,7 @@ function AllCatsTemplate({ pageContext }) {
   const [max, min] = [Math.max(...count), Math.min(...count)];
   return (
     <Layout heading="Categories" slug="categories">
+      <SEO title="Categories" />
       <div className="term-cloud-container">
         <ul className="term-cloud">
           {cats.map(cat => {

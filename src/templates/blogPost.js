@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
+
 import moment from 'moment';
 require(`katex/dist/katex.min.css`);
 
@@ -15,7 +17,8 @@ function Template({ data, pageContext }) {
   const parsedDate = momentDate.format('MMM DD, YYYY');
   const ISODate = momentDate.toISOString();
   return (
-    <Layout showHeader={false}>
+    <Layout showHeader={false} heading={title}>
+      <SEO title={title} />
       <Article
         categories={categories}
         email={email}

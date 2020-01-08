@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
+
 import moment from 'moment';
 
 function SingleTagTemplate({ pageContext }) {
   const { posts, tag } = pageContext;
   return (
     <Layout heading={`Tag: ${tag}`} slug="tag">
+      <SEO title={`Tag: ${tag}`} />
       <div className="list-container">
         <ul className="list">
           {posts.map(post => {

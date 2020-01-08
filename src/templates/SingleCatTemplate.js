@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
+
 import moment from 'moment';
 
 function SingleCatTemplate({ pageContext }) {
   const { posts, cat } = pageContext;
   return (
     <Layout heading={`Category: ${cat}`} slug="category">
+      <SEO title={`Category: ${cat}`} />
       <div className="list-container">
         <ul className="list">
           {posts.map(post => {

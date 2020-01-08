@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 function AllTagsTemplate({ pageContext }) {
   const { postsByTag, tags } = pageContext;
@@ -8,6 +9,7 @@ function AllTagsTemplate({ pageContext }) {
   const [max, min] = [Math.max(...count), Math.min(...count)];
   return (
     <Layout heading="Tags" slug="tags">
+      <SEO title="Tags" />
       <div className="term-cloud-container">
         <ul className="term-cloud">
           {tags.map(tag => {
