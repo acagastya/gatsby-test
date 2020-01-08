@@ -5,9 +5,9 @@ import SEO from '../components/seo';
 
 function NotFoundPage() {
   return (
-    <Layout>
+    <Layout heading="404: Not found">
       <SEO title="404: Not found" />
-      <h1>Article not found. &nbsp;It is okay.</h1>
+      <h1>It is okay, it is all right.</h1>
       <blockquote>
         <p>
           [The roads] moved with the land, you know? It rose, it fell, it

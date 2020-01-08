@@ -5,7 +5,12 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 
-function Layout({ children, showHeader = true }) {
+function Layout({
+  children,
+  heading = undefined,
+  showHeader = true,
+  slug = undefined,
+}) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -35,9 +40,10 @@ function Layout({ children, showHeader = true }) {
         Skip to Content
       </a>
       <Header
-        siteTitle={title}
         description={description}
         showHeader={showHeader}
+        siteTitle={heading || title}
+        slug={slug}
       />
       <main className="main" id="main">
         {children}

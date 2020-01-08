@@ -1,8 +1,10 @@
+/* eslint-disable eqeqeq */
+
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Header({ description, siteTitle, showHeader }) {
+function Header({ description, showHeader, siteTitle, slug }) {
   return (
     <header id="header" className="header-container">
       <div className="header site-header">
@@ -13,10 +15,18 @@ function Header({ description, siteTitle, showHeader }) {
         >
           <ul className="main-menu">
             <li>
-              <Link to="/post">Blog</Link>
+              {slug == 'post' ? (
+                <BoldEntry text="Blog" />
+              ) : (
+                <Link to="/post">Blog</Link>
+              )}
             </li>
             <li>
-              <Link to="/about">About</Link>
+              {slug == 'about' ? (
+                <BoldEntry text="About" />
+              ) : (
+                <Link to="/about">About</Link>
+              )}
             </li>
           </ul>
         </nav>
@@ -26,8 +36,9 @@ function Header({ description, siteTitle, showHeader }) {
             <p className="site-title title">
               <Link to="/">{siteTitle}</Link>
             </p>
-
-            <p className="site-description subtitle">{description}</p>
+            {siteTitle == 'Agastya' && (
+              <p className="site-description subtitle">{description}</p>
+            )}
           </div>
         )}
       </div>
@@ -42,5 +53,9 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 };
+
+function BoldEntry({ text = '' }) {
+  return <span style={{ fontWeight: 700, cursor: 'default' }}>{text}</span>;
+}
 
 export default Header;
