@@ -31,6 +31,7 @@ module.exports = {
             },
           },
           `gatsby-remark-abbr`,
+          `gatsby-remark-responsive-iframe`,
         ],
       },
     },
