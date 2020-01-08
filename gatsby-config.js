@@ -17,7 +17,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-footnotes',
             options: {
-              footnoteBackRefAnchorStyle: `text-decoration: none;`,
+              footnoteBackRefAnchorStyle: 'text-decoration: none;',
               footnoteBackRefDisplay: 'inline',
               footnoteBackRefInnerText: '[return]',
               footnoteBackRefPreviousElementDisplay: 'inline',
@@ -30,8 +30,22 @@ module.exports = {
               strict: 'ignore',
             },
           },
-          `gatsby-remark-abbr`,
-          `gatsby-remark-responsive-iframe`,
+          'gatsby-remark-abbr',
+          'gatsby-remark-responsive-iframe',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: '›',
+              noInlineHighlight: false,
+              showLineNumbers: true,
+              prompt: {
+                user: 'john',
+                host: 'pc',
+                global: false,
+              },
+            },
+          },
         ],
       },
     },
@@ -64,8 +78,5 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

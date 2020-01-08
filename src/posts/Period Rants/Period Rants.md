@@ -66,77 +66,22 @@ Speak clearly. And not gibbrish. What you say should make sense.
 
 <u>**Suggestion for everyone:**</u> go speak to someone who knows about menstruation. It is important to learn about reproductive health even if you can't menstruate.
 
-The HTML specification
-is maintained by the W3C.
-
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
-
-
----
-
-# gatsby-remark-katex
-
-[gatsby-remark-katex][1] adds math equation support to gatsby using
-[remark-math][2] and [katex][3]. Live example at [using-remark.gatsbyjs.org/katex/](https://using-remark.gatsbyjs.org/katex/).
-
-## Install
-
-`npm install --save gatsby-transformer-remark gatsby-remark-katex katex`
-
-## How to use
-
-```javascript
-// In your gatsby-config.js
-plugins: [
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-remark-katex`,
-          options: {
-            // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-            strict: `ignore`
-          }
-        }
-      ],
-    },
-  },
-],
+```bash{outputLines: 2-10,12}
+total 8
+drwxr-xr-x   2 acagastya  staff    64 21 Aug 02:18 AndroidStudioProjects
+drwx------@  4 acagastya  staff   128 24 Oct 23:31 Applications
+drwxrwxr-x@  6 acagastya  staff   192  8 Jan 11:52 Creative Cloud Files
+drwx------@  5 acagastya  staff   160  8 Jan 14:42 Desktop
+drwx------@  7 acagastya  staff   224 12 Dec 22:01 Documents
+drwx------@  9 acagastya  staff   288  8 Jan 14:33 Downloads
+drwx------@ 90 acagastya  staff  2880  7 Dec 23:09 Library
+drwxr-xr-x@  7 acagastya  staff   224  8 Nov 09:17 Literature
+drwx------+  9 acagastya  staff   288  8 Jan 16:07 Movies
+drwx------+  8 acagastya  staff   256 11 Dec 18:55 Music
+drwx------+  8 acagastya  staff   256  6 Jan 14:34 Pictures
+drwxr-xr-x+  4 acagastya  staff   128 17 Aug 16:53 Public
+drwxr-xr-x   3 acagastya  staff    96  4 Dec 02:34 node_modules
+-rw-r--r--   1 acagastya  staff    86  4 Dec 02:34 yarn.lock
 ```
 
-**Add Katex CSS to your template:** Katex's CSS file is required to render the formulas correctly. Include the CSS file in your template ([example][4]):
-
-```javascript
-require(`katex/dist/katex.min.css`)
-```
-
-### Math Equations in Inline Mode
-
-Surround your equation with `$` to generate a math equation in inline mode.
-
-**Example markdown:**
-
-```markdown
-$a^2 + b^2 = c^2$
-```
-
-### Math Equations in Display Mode
-
-Surround your equation with `$$` and new-lines to generate a math equation in
-display mode.
-
-**Example markdown:**
-
-```markdown
-$$
-a^2 + b^2 = c^2
-$$
-```
-
-[1]: https://www.gatsbyjs.org/packages/gatsby-remark-katex/
-[2]: https://github.com/Rokt33r/remark-math
-[3]: https://github.com/Khan/KaTeX
-[4]: https://github.com/gatsbyjs/gatsby/blob/master/examples/using-remark/src/templates/template-blog-post.js
-
+I can highlight `css›.some-class { background-color: red }` with CSS syntax.
