@@ -1,1 +1,1 @@
-require('./src/components/highlight-code-line.css');
+require('./src/components/code-highlight.css');

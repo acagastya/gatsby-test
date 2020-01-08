@@ -41,7 +41,7 @@ module.exports = {
               showLineNumbers: true,
               prompt: {
                 user: 'john',
-                host: 'pc',
+                host: 'doe',
                 global: false,
               },
             },
