@@ -36,9 +36,11 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "computing",
-    "programming",
-    "blog"
+    "algorithms",
+    "blog",
+    "computation",
+    "learning",
+    "programming"
   ],
   "license": "BSD-3-Clause",
   "name": "agastya",
