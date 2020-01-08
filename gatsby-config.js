@@ -30,6 +30,7 @@ module.exports = {
               strict: 'ignore',
             },
           },
+          `gatsby-remark-abbr`,
         ],
       },
     },

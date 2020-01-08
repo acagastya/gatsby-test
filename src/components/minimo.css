@@ -364,7 +364,7 @@ var {
 abbr,
 acronym {
   border-bottom: 1px dotted #212121;
-  cursor: help;
+  cursor: alias;
 }
 ins,
 mark {
