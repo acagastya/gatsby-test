@@ -32,6 +32,7 @@ module.exports = {
           },
           'gatsby-remark-abbr',
           'gatsby-remark-responsive-iframe',
+          'gatsby-remark-mermaid',
           {
             resolve: 'gatsby-remark-prismjs',
             options: {

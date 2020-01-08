@@ -12,16 +12,12 @@ title: 'Period Rants'
 
 ## Dated July 4, 2019
 
-```flow
-st=>start: Start
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-e=>end
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-​```
+```mermaid
+graph LR
+install[Install Plugin]
+install --> configure[Configure Plugin]
+configure --> draw[Draw Fancy Diagrams]
+```
 
 ![](https://i.imgur.com/ZY79GGJ.jpg)
 ![](https://i.imgur.com/aVCYHch.jpg)
