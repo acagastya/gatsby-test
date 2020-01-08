@@ -41,6 +41,47 @@ const createTagPages = function(createPage, posts) {
   });
 };
 
+const createCatPages = function(createPage, posts) {
+  const allCatsTemplate = path.resolve(
+    'src',
+    'templates',
+    'allCatsTemplate.js'
+  );
+  const singleCatTemplate = path.resolve(
+    'src',
+    'templates',
+    'singleCatTemplate.js'
+  );
+  const postsByCat = {};
+  posts.forEach(({ node }) => {
+    if (node.frontmatter.categories) {
+      node.frontmatter.categories.forEach(cat => {
+        if (!postsByCat[cat]) postsByCat[cat] = [];
+        postsByCat[cat].push(node);
+      });
+    }
+  });
+  const cats = Object.keys(postsByCat);
+
+  createPage({
+    path: '/categories',
+    component: allCatsTemplate,
+    context: { cats, postsByCat },
+  });
+
+  cats.forEach(cat => {
+    const posts = postsByCat[cat];
+    createPage({
+      path: `/categories/${cat}`,
+      component: singleCatTemplate,
+      context: {
+        cat,
+        posts,
+      },
+    });
+  });
+};
+
 exports.createPages = function({ graphql, actions }) {
   const { createPage } = actions;
 
@@ -57,6 +98,7 @@ exports.createPages = function({ graphql, actions }) {
               edges {
                 node {
                   frontmatter {
+                    categories
                     date
                     path
                     tags
@@ -70,6 +112,7 @@ exports.createPages = function({ graphql, actions }) {
       ).then(function(result) {
         const posts = result.data.allMarkdownRemark.edges;
         createTagPages(createPage, posts);
+        createCatPages(createPage, posts);
         posts.forEach(function({ node }, index) {
           createPage({
             path: 'post' + node.frontmatter.path,

@@ -1,0 +1,34 @@
+import React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+
+function AllCatsTemplate({ pageContext }) {
+  const { postsByCat, cats } = pageContext;
+  const count = Object.values(postsByCat).map(el => el.length);
+  const [max, min] = [Math.max(...count), Math.min(...count)];
+  return (
+    <Layout heading="Categories" slug="categories">
+      <div className="term-cloud-container">
+        <ul className="term-cloud">
+          {cats.map(cat => {
+            const numerator = postsByCat[cat].length - min;
+            const denominator = max - min;
+            const num = denominator ? numerator / denominator : 1;
+            return (
+              <li key={cat}>
+                <Link
+                  to={`/categories/${cat}`}
+                  style={{ fontSize: `${1 + num}em` }}
+                >
+                  {cat}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </Layout>
+  );
+}
+
+export default AllCatsTemplate;
