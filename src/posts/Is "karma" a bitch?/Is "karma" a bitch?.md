@@ -4,6 +4,7 @@ date: '2019-01-19'
 excerpt: '"Karma" is one of the well-known words that English has adopted from Sanskrit. "Pundit" is another word which comes to my mind.
 
 However, the process of adoption distorts the words, many-a-times. "Pundit" does not mean the exact same thing, "Karma" does not sound anything like its root word, "कर्म".'
+lang: 'en'
 page: 'false'
 path: '/is-karma-a-bitch'
 tags: ['Opportunity', 'Religion', 'Essay']

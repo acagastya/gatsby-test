@@ -3,6 +3,7 @@ cover: 'https://images.unsplash.com/photo-1503525148566-ef5c2b9c93bd?ixlib=rb-1.
 date: '2018-12-04'
 excerpt: '"I guess I have to do it now.  It does not feel right to tell my little boy about all the atrocities that has happened because of the race, gender, ethnicity, et cetera.
 I wish that poor innocent soul would never have to learn about it.  But I do not want him to be unaware of the past."'
+lang: 'en'
 page: 'false'
 path: '/teaching-about-hatred'
 tags: ['Questions', 'Parenting', 'Learning', 'Teaching']

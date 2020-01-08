@@ -2,6 +2,7 @@
 cover: 'https://images.unsplash.com/photo-1545153485-e3bf87d59682?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2019-07-04'
 excerpt: "I am willing to bet I don't know much about periods.  Especially the darned phrases.  I just can't seem to understand them!"
+lang: 'en'
 page: 'false'
 path: '/period-rants'
 tags: ['Rantzone']

@@ -4,6 +4,7 @@ date: '2018-06-16'
 excerpt: '"Education" might not be the correct word for what I want to share right now.
 
 How about "Education System"?  There might be a few people who would agree that current education system is doomed.'
+lang: 'en'
 page: 'false'
 path: '/education'
 tags: ['Education', 'Learning', 'Opportunity', 'Essay']
