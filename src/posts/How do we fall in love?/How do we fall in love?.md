@@ -1,6 +1,7 @@
 ---
 cover: 'https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2019-01-25'
+draft: false
 excerpt: 'I wonder how it was like for you, when you went for a walk with your grandfather.  Or when your grandmother would give you a sound piece of advice.'
 lang: 'en'
 page: 'false'

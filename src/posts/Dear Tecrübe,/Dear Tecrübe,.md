@@ -1,6 +1,7 @@
 ---
 cover: 'http://hanabi.in/content/images/2018/12/kevin-gent-219197-unsplash.jpg'
 date: '2018-06-10'
+draft: false
 excerpt: 'Dear Tecrübe, I may not be the person you feel comfortable talking and opening up to, and it is not your fault; and there may be a million things you would rather do, before even thinking of letting me speak to you, but it is my duty to tell you this:'
 lang: 'en'
 page: 'false'

@@ -1,6 +1,7 @@
 ---
 cover: 'https://images.unsplash.com/photo-1530517903273-3d60130ce0de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2019-01-19'
+draft: false
 excerpt: '"Karma" is one of the well-known words that English has adopted from Sanskrit. "Pundit" is another word which comes to my mind.
 
 However, the process of adoption distorts the words, many-a-times. "Pundit" does not mean the exact same thing, "Karma" does not sound anything like its root word, "कर्म".'

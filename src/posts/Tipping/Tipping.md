@@ -1,6 +1,7 @@
 ---
 cover: 'https://images.unsplash.com/photo-1523540939399-141cbff6a8d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=13b5734db042709c526879c4a5663c85'
 date: '2018-06-03'
+draft: false
 excerpt: 'When you give money to someone at the restaurant because they opened the door for you, they would thank you for the money — but I can not think of a more embarrassing moment if someone gives me money for some random act of kindness or, things I was expected to do.'
 lang: 'en'
 page: 'false'
