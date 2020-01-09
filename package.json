@@ -8,13 +8,14 @@
     "url": "https://github.com/acagastya/agastya/issues"
   },
   "dependencies": {
+    "@raae/gatsby-remark-oembed": "^0.1.1",
+    "add": "^2.0.6",
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.30",
     "gatsby-plugin-offline": "^3.0.24",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.4",
-    "gatsby-plugin-twitter": "^2.1.17",
     "gatsby-remark-abbr": "^2.0.0",
     "gatsby-remark-embed-spotify": "^2.1.1",
     "gatsby-remark-footnotes": "^0.0.7",
@@ -31,7 +32,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "yarn": "^1.21.1"
   },
   "description": "I might talk about computation and programming",
   "devDependencies": {

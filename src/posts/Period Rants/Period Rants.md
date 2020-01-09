@@ -53,7 +53,6 @@ Do people think before they author these phrases?
 
 Languages are tools we use to express ourselves in a better and clearer way.  Some of the English phrases are weird.  As my classmate, Devang, once tweeted: "Why are priceless and worthless antonyms rather than synonyms?"
 
-
 <blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Why are priceless and worthless antonyms rather than synonyms?!</p>&mdash; Devang J (@devangishere) <a href="https://twitter.com/devangishere/status/1115831423963947009?ref_src=twsrc%5Etfw">10 April 2019</a></blockquote>
 
 But none of these three is as bad as this phrase in Hindi: "मैं तुम्हारे बच्चे के माँ बनने वाली हूँ!" It is not related to the menstrual cycle, but hear me out. It translates to "I will be becoming the mother of your kid!" Hindi TV soaps and movies feature this sentence when a female tells the male she is pregnant.  She could simply say "मैं गर्भवती हूँ", but no; they got to say some confusing shit. You may argue the former translation is not accurate and it should be "I am going to be your child's mother".

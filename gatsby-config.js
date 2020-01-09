@@ -54,6 +54,15 @@ module.exports = {
               height: 320,
             },
           },
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              usePrefix: true,
+              providers: {
+                include: ['Twitter', 'Instagram'],
+              },
+            },
+          },
         ],
       },
     },
@@ -86,6 +95,5 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-twitter',
   ],
 };
