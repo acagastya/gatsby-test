@@ -47,6 +47,13 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: 'gatsby-remark-embed-spotify',
+            options: {
+              width: 320,
+              height: 320,
+            },
+          },
         ],
       },
     },

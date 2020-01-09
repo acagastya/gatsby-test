@@ -2,7 +2,7 @@
 categories: []
 cover: 'https://images.unsplash.com/photo-1503525148566-ef5c2b9c93bd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2018-12-04'
-draft: true
+draft: false
 excerpt: '"I guess I have to do it now.  It does not feel right to tell my little boy about all the atrocities that has happened because of the race, gender, ethnicity, et cetera.
 I wish that poor innocent soul would never have to learn about it.  But I do not want him to be unaware of the past."'
 lang: 'en'
@@ -55,7 +55,6 @@ I would strongly suggest you listening to *You've Got to Be Carefully Taught*, a
 [Link](https://open.spotify.com/track/6aXgSsCmhk4Dl9mURJ06pY?si=uQ7M8dxZQ8mmwNFWVGVXgA) to the song on Spotify, or listen here:
 
 
-<iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A6aXgSsCmhk4Dl9mURJ06pY" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-<figcaption><em>"You've Got to Be Carefully Taught" (1949) by Richard Rodgers, "South Pacific"</em></figcaption>
+https://open.spotify.com/track/6aXgSsCmhk4Dl9mURJ06pY?si=uQ7M8dxZQ8mmwNFWVGVXgA
 
 ------
