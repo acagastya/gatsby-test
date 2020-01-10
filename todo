@@ -1,2 +1,2 @@
-Create /tags
-Create /categories
+Add MDX support
+Add rehype support for images in .md

@@ -13,6 +13,14 @@ title: 'Dear Tecrübe,'
 
 $\LaTeX$
 
+This is normal body copy.[^also] It includes a couple footnotes.[^thing]
+
+[^also]:
+  This is a footnote.
+
+[^thing]:
+  This is another footnote.
+
 ## Dated June 10, 2018
 
 > I may not be the person you feel comfortable talking and opening up to, and it is not your fault; and there may be a million things you would rather do, before even thinking of letting me speak to you, but it is my duty to tell you this:

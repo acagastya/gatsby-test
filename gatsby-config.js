@@ -10,29 +10,86 @@ module.exports = {
     github: 'acagastya',
   },
   plugins: [
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: 'gatsby-remark-footnotes',
+    //         options: {
+    //           footnoteBackRefAnchorStyle: 'text-decoration: none;',
+    //           footnoteBackRefDisplay: 'inline',
+    //           footnoteBackRefInnerText: '[return]',
+    //           footnoteBackRefPreviousElementDisplay: 'inline',
+    //           useFootnoteMarkerText: false,
+    //         },
+    //       },
+    //       {
+    //         resolve: 'gatsby-remark-katex',
+    //         options: {
+    //           strict: 'ignore',
+    //         },
+    //       },
+    //       'gatsby-remark-abbr',
+    //       'gatsby-remark-responsive-iframe',
+    //       'gatsby-remark-mermaid',
+    //       {
+    //         resolve: 'gatsby-remark-prismjs',
+    //         options: {
+    //           classPrefix: 'language-',
+    //           inlineCodeMarker: '›',
+    //           noInlineHighlight: false,
+    //           showLineNumbers: true,
+    //           prompt: {
+    //             user: 'john',
+    //             host: 'doe',
+    //             global: false,
+    //           },
+    //         },
+    //       },
+    //       {
+    //         resolve: 'gatsby-remark-embed-spotify',
+    //         options: {
+    //           width: 320,
+    //           height: 320,
+    //         },
+    //       },
+    //       {
+    //         resolve: `@raae/gatsby-remark-oembed`,
+    //         options: {
+    //           usePrefix: true,
+    //           providers: {
+    //             include: ['Twitter', 'Instagram'],
+    //           },
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-footnotes',
-            options: {
-              footnoteBackRefAnchorStyle: 'text-decoration: none;',
-              footnoteBackRefDisplay: 'inline',
-              footnoteBackRefInnerText: '[return]',
-              footnoteBackRefPreviousElementDisplay: 'inline',
-              useFootnoteMarkerText: false,
-            },
-          },
+        name: 'posts',
+        path: path.join(__dirname, 'src', 'posts'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-katex',
             options: {
               strict: 'ignore',
             },
           },
-          'gatsby-remark-abbr',
-          'gatsby-remark-responsive-iframe',
-          'gatsby-remark-mermaid',
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+          },
+          {
+            resolve: 'gatsby-remark-mermaid',
+          },
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
@@ -64,13 +121,21 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: path.join(__dirname, 'src', 'posts'),
+        remarkPlugins: [
+          {
+            resolve: 'gatsby-remark-footnotes',
+            options: {
+              footnoteBackRefAnchorStyle: 'text-decoration: none;',
+              footnoteBackRefDisplay: 'inline',
+              footnoteBackRefInnerText: '[return]',
+              footnoteBackRefPreviousElementDisplay: 'inline',
+              useFootnoteMarkerText: false,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-abbr',
+          },
+        ],
       },
     },
     'gatsby-plugin-react-helmet',

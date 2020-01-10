@@ -2,17 +2,17 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import moment from 'moment';
 require(`katex/dist/katex.min.css`);
 
 function Template({ data, pageContext }) {
-  const { categories, tags } = data.markdownRemark.frontmatter;
   const { next, prev } = pageContext;
+  const { mdx } = data;
+  const { body, frontmatter, html } = mdx;
+  const { categories, date, lang, tags, title } = frontmatter;
   const { email, github, twitter } = data.site.siteMetadata;
-  const { markdownRemark } = data;
-  const { html } = markdownRemark;
-  const { date, lang, title } = markdownRemark.frontmatter;
   const momentDate = moment(date);
   const parsedDate = momentDate.format('MMM DD, YYYY');
   const ISODate = momentDate.toISOString();
@@ -20,6 +20,7 @@ function Template({ data, pageContext }) {
     <Layout showHeader={false} heading={title}>
       <SEO title={title} />
       <Article
+        body={body}
         categories={categories}
         email={email}
         github={github}
@@ -38,8 +39,8 @@ function Template({ data, pageContext }) {
 
 export const query = graphql`
   query($pathSlug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
-      html
+    mdx(frontmatter: { path: { eq: $pathSlug } }) {
+      body
       frontmatter {
         categories
         date
@@ -59,6 +60,7 @@ export const query = graphql`
 `;
 
 function Article({
+  body,
   categories,
   email,
   github,
@@ -80,10 +82,11 @@ function Article({
         title={title}
         twitter={twitter}
       />
-      <div
+      {/* <div
         className="entry-content"
         dangerouslySetInnerHTML={{ __html: html }}
-      />
+      /> */}
+      <MDXRenderer>{body}</MDXRenderer>
       <Footer categories={categories} tags={tags} />
     </article>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
+import { MDXProvider } from '@mdx-js/react';
 
 import Header from './header';
 import Footer from './footer';
@@ -46,7 +47,7 @@ function Layout({
         slug={slug}
       />
       <main className="main" id="main">
-        {children}
+        <MDXProvider>{children}</MDXProvider>
       </main>
       <Footer author={author} email={email} github={github} twitter={twitter} />
     </div>

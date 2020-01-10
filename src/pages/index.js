@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 import moment from 'moment';
 
 function IndexPage({ data }) {
-  const { edges } = data.allMarkdownRemark;
+  const { edges } = data.allMdx;
   return (
     <Layout>
       <SEO title="Home" />
@@ -51,7 +51,7 @@ function IndexPage({ data }) {
 
 export const query = graphql`
   query HomePageQuery {
-    allMarkdownRemark(
+    allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { draft: { ne: true } } }
     ) {

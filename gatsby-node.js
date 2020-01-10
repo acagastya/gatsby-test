@@ -91,7 +91,7 @@ exports.createPages = function({ graphql, actions }) {
       graphql(
         `
           query {
-            allMarkdownRemark(
+            allMdx(
               sort: { order: DESC, fields: [frontmatter___date] }
               filter: { frontmatter: { draft: { ne: true } } }
             ) {
@@ -110,7 +110,7 @@ exports.createPages = function({ graphql, actions }) {
           }
         `
       ).then(function(result) {
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMdx.edges;
         createTagPages(createPage, posts);
         createCatPages(createPage, posts);
         posts.forEach(function({ node }, index) {

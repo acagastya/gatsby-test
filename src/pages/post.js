@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 import moment from 'moment';
 
 function Blog({ data }) {
-  const { edges } = data.allMarkdownRemark;
+  const { edges } = data.allMdx;
   return (
     <Layout heading="Blog" slug="post">
       <SEO title="Blog" />
@@ -48,7 +48,7 @@ function Blog({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { draft: { ne: true } } }
     ) {
