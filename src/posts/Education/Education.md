@@ -96,7 +96,7 @@ Two years ago, I went to a school in a rural area in Rajasthan.  There were more
           viewBox="0 0 60 60"
           version="1.1"
           xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlnsXlink="https://www.w3.org/1999/xlink"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-511.000000, -20.000000)" fill="#000000">
@@ -214,7 +214,7 @@ Two years ago, I went to a school in a rural area in Rajasthan.  There were more
           viewBox="0 0 60 60"
           version="1.1"
           xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlnsXlink="https://www.w3.org/1999/xlink"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-511.000000, -20.000000)" fill="#000000">
@@ -332,7 +332,7 @@ Two years ago, I went to a school in a rural area in Rajasthan.  There were more
           viewBox="0 0 60 60"
           version="1.1"
           xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlnsXlink="https://www.w3.org/1999/xlink"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-511.000000, -20.000000)" fill="#000000">
@@ -450,7 +450,7 @@ Two years ago, I went to a school in a rural area in Rajasthan.  There were more
           viewBox="0 0 60 60"
           version="1.1"
           xmlns="https://www.w3.org/2000/svg"
-          xmlns:xlink="https://www.w3.org/1999/xlink"
+          xmlnsXlink="https://www.w3.org/1999/xlink"
         >
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-511.000000, -20.000000)" fill="#000000">

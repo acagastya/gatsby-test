@@ -1,14 +1,15 @@
 ---
-categories: []
+categories: ['Rant']
 cover: 'https://images.unsplash.com/photo-1545153485-e3bf87d59682?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ'
 date: '2019-07-04'
 draft: false
-excerpt: "I am willing to bet I don't know much about periods.  Especially the darned phrases.  I just can't seem to understand them!"
+excerpt: 'I am willing to bet I dont know much about periods.  Especially the darned phrases.  I just cant seem to understand them!'
 lang: 'en'
 page: 'false'
 path: '/period-rants'
 tags: ['Rantzone']
 title: 'Period Rants'
+
 ---
 
 ## Dated July 4, 2019
@@ -26,7 +27,7 @@ But I am willing to bet I don't know much about periods.  Especially the darned 
 You lost something&mdash;and at the same time, you got it?
 ![](https://i.imgur.com/ZY79GGJ.jpg)
 
-What kind of sorcery is that?  How was I to know it meant the opposite of what it read?  Lost the period?  Why would you call it "losing"?  That is beyond what my brain can comprehend.  Why not say, "I got my periods"?  When a pregnant lady gives birth to the child; she does not say "I lost my baby". <br>In all fairness, she does not say, "I got my baby" either.  But she definitely did not lose the kid.<br>I used this analogy to convince myself that usage was wrong.  I responded saying: "Then you definitely did not lose it."
+What kind of sorcery is that?  How was I to know it meant the opposite of what it read?  Lost the period?  Why would you call it "losing"?  That is beyond what my brain can comprehend.  Why not say, "I got my periods"?  When a pregnant lady gives birth to the child; she does not say "I lost my baby". <br/>In all fairness, she does not say, "I got my baby" either.  But she definitely did not lose the kid.<br/>I used this analogy to convince myself that usage was wrong.  I responded saying: "Then you definitely did not lose it."
 
 ![](https://i.imgur.com/aVCYHch.jpg)
 
@@ -45,7 +46,7 @@ Tell me if people *"get"* any of those while losing at the same time.
 
 Now, this confrontation [with the weird phrase] made me think "I missed my period" does not make sense either.  For you to miss the event, the event should occur and you should have not attended it.  When I say "I missed the train", it means the train left and I could not board the train.  If the train was cancelled, there would have been no train to miss in the first place.
 
-"I missed the doomsday!"  No, I did not.  It did not occur, for me to miss it.<br>When I missed the train; if the train could speak, it would not say "I missed a passenger".  It would say, "A passenger did not show up."
+"I missed the doomsday!"  No, I did not.  It did not occur, for me to miss it.<br/>When I missed the train; if the train could speak, it would not say "I missed a passenger".  It would say, "A passenger did not show up."
 
 So, you did not "miss the period".  The brutal bloodshed did not show up.  Hooray!  Go get ice cream.  And a pregnancy test kit.
 
@@ -57,7 +58,7 @@ Languages are tools we use to express ourselves in a better and clearer way.  So
 
 But none of these three is as bad as this phrase in Hindi: "मैं तुम्हारे बच्चे के माँ बनने वाली हूँ!" It is not related to the menstrual cycle, but hear me out. It translates to "I will be becoming the mother of your kid!" Hindi TV soaps and movies feature this sentence when a female tells the male she is pregnant.  She could simply say "मैं गर्भवती हूँ", but no; they got to say some confusing shit. You may argue the former translation is not accurate and it should be "I am going to be your child's mother".
 
-"So what?" I ask. So fucking what? That sentence is still incorrect. To begin with, in that scenario, pregnancy is in the present continuous tense.  You *are* the host of the future child.  The female is not undergoing metamorphosis like a caterpillar who is transforming into a butterfly, which it is implied in the original sentence.  Though the pregnant lady's body structure in the uterus is drastically changing.  And even if she was undergoing metamorphosis, the child is not born yet to truthify this claim. The female is incubating the baby, or fœtus depending on the stage of pregnancy. You are not about to, on becoming a mother of someone else's child. You are pregnant with a baby. The zygote is turning to embryo, then fœtus, which will turn into a baby.<br>Please do not utter random set of words that are logically inconsistent or ambiguous.
+"So what?" I ask. So fucking what? That sentence is still incorrect. To begin with, in that scenario, pregnancy is in the present continuous tense.  You *are* the host of the future child.  The female is not undergoing metamorphosis like a caterpillar who is transforming into a butterfly, which it is implied in the original sentence.  Though the pregnant lady's body structure in the uterus is drastically changing.  And even if she was undergoing metamorphosis, the child is not born yet to truthify this claim. The female is incubating the baby, or fœtus depending on the stage of pregnancy. You are not about to, on becoming a mother of someone else's child. You are pregnant with a baby. The zygote is turning to embryo, then fœtus, which will turn into a baby.<br/>Please do not utter random set of words that are logically inconsistent or ambiguous.
 
 If a person is hearing "I lost my period", they would not go check if there are enough sanitary pads. As someone who has lost their appetite would not check if there is food in the fridge, and they might go see a doctor.
 
