@@ -11,6 +11,12 @@ tags: ['Life lessons', 'Essay']
 title: 'Dear Tecrübe,'
 ---
 
+The HTML specification
+is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]: World Wide Web Consortium
+
 $\LaTeX$
 
 This is normal body copy.[^also] It includes a couple footnotes.[^thing]
@@ -20,6 +26,8 @@ This is normal body copy.[^also] It includes a couple footnotes.[^thing]
 
 [^thing]:
   This is another footnote.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DAwG4h8NQgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Dated June 10, 2018
 

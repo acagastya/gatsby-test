@@ -191,3 +191,14 @@ pre[data-line] {
 .command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
+/* .gatsby-highlight {
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+} */

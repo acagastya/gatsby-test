@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './minimo.css';
-import './custom.css';
-
 function Footer({ author, email, github, twitter }) {
   const currentYear = new Date().getFullYear();
   return (

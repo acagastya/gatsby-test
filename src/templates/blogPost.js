@@ -5,7 +5,6 @@ import SEO from '../components/seo';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import moment from 'moment';
-require(`katex/dist/katex.min.css`);
 
 function Template({ data, pageContext }) {
   const { next, prev } = pageContext;
@@ -82,11 +81,9 @@ function Article({
         title={title}
         twitter={twitter}
       />
-      {/* <div
-        className="entry-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      /> */}
-      <MDXRenderer>{body}</MDXRenderer>
+      <div className="entry-content">
+        <MDXRenderer>{body}</MDXRenderer>
+      </div>
       <Footer categories={categories} tags={tags} />
     </article>
   );

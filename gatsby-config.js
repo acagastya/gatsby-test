@@ -10,62 +10,7 @@ module.exports = {
     github: 'acagastya',
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-transformer-remark',
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: 'gatsby-remark-footnotes',
-    //         options: {
-    //           footnoteBackRefAnchorStyle: 'text-decoration: none;',
-    //           footnoteBackRefDisplay: 'inline',
-    //           footnoteBackRefInnerText: '[return]',
-    //           footnoteBackRefPreviousElementDisplay: 'inline',
-    //           useFootnoteMarkerText: false,
-    //         },
-    //       },
-    //       {
-    //         resolve: 'gatsby-remark-katex',
-    //         options: {
-    //           strict: 'ignore',
-    //         },
-    //       },
-    //       'gatsby-remark-abbr',
-    //       'gatsby-remark-responsive-iframe',
-    //       'gatsby-remark-mermaid',
-    //       {
-    //         resolve: 'gatsby-remark-prismjs',
-    //         options: {
-    //           classPrefix: 'language-',
-    //           inlineCodeMarker: '›',
-    //           noInlineHighlight: false,
-    //           showLineNumbers: true,
-    //           prompt: {
-    //             user: 'john',
-    //             host: 'doe',
-    //             global: false,
-    //           },
-    //         },
-    //       },
-    //       {
-    //         resolve: 'gatsby-remark-embed-spotify',
-    //         options: {
-    //           width: 320,
-    //           height: 320,
-    //         },
-    //       },
-    //       {
-    //         resolve: `@raae/gatsby-remark-oembed`,
-    //         options: {
-    //           usePrefix: true,
-    //           providers: {
-    //             include: ['Twitter', 'Instagram'],
-    //           },
-    //         },
-    //       },
-    //     ],
-    //   },
-    // },
+    'gatsby-plugin-twitter',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -79,9 +24,12 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
-            resolve: 'gatsby-remark-katex',
+            resolve: `@raae/gatsby-remark-oembed`,
             options: {
-              strict: 'ignore',
+              usePrefix: ['embed', 'video', 'oembed'],
+              providers: {
+                include: ['Twitter', 'Instagram'],
+              },
             },
           },
           {
@@ -96,7 +44,7 @@ module.exports = {
               classPrefix: 'language-',
               inlineCodeMarker: '›',
               noInlineHighlight: false,
-              showLineNumbers: true,
+              showLineNumbers: false,
               prompt: {
                 user: 'john',
                 host: 'doe',
@@ -112,12 +60,9 @@ module.exports = {
             },
           },
           {
-            resolve: `@raae/gatsby-remark-oembed`,
+            resolve: 'gatsby-remark-katex',
             options: {
-              usePrefix: true,
-              providers: {
-                include: ['Twitter', 'Instagram'],
-              },
+              strict: 'ignore',
             },
           },
         ],
@@ -125,16 +70,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-footnotes',
             options: {
-              footnoteBackRefAnchorStyle: 'text-decoration: none;',
+              footnoteBackRefAnchorStyle: 'text-decoration: line-through;',
               footnoteBackRefDisplay: 'inline',
               footnoteBackRefInnerText: '[return]',
               footnoteBackRefPreviousElementDisplay: 'inline',
               useFootnoteMarkerText: false,
             },
           },
-          {
-            resolve: 'gatsby-remark-abbr',
-          },
+          require('remark-abbr'),
         ],
       },
     },

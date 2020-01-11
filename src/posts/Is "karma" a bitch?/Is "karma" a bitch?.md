@@ -21,7 +21,7 @@ However, the process of adoption distorts the words, many-a-times.  "Pundit" doe
 
 Actually, they sound very similar; I just happen to have stretched that too much.  But a great many words of the Sanskrit word bank have a trailing 'a', in their transliterated spellings.  It leads to corruption of pronunciation.  Much to my annoyance, many people do not pronounce my name correctly.
 
-For what it is worth, there is no `/a/` sound at the end of "karma", in the root word.
+For what it is worth, there is no \`/a/\` sound at the end of "karma", in the root word.
 
 What comes to your mind when you hear the word "karma"?  How would you define "karma"?  What do you know about it?  Do you believe in "karma"?
 
