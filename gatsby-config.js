@@ -22,18 +22,22 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
+        defaultLayout: {
+          default: require.resolve('./src/components/layout.js'),
+          posts: require.resolve('./src/templates/blogPost.js'),
+        },
         gatsbyRemarkPlugins: [
           {
-            resolve: `@raae/gatsby-remark-oembed`,
+            resolve: 'gatsby-remark-autolink-headers',
             options: {
-              usePrefix: ['embed', 'video', 'oembed'],
-              providers: {
-                include: ['Twitter', 'Instagram'],
-              },
+              className: 'autolink-header-anchor',
             },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
+          },
+          {
+            resolve: 'gatsby-remark-embedder',
           },
           {
             resolve: 'gatsby-remark-mermaid',
@@ -53,13 +57,6 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-embed-spotify',
-            options: {
-              width: 320,
-              height: 320,
-            },
-          },
-          {
             resolve: 'gatsby-remark-katex',
             options: {
               strict: 'ignore',
@@ -72,7 +69,7 @@ module.exports = {
             options: {
               footnoteBackRefAnchorStyle: 'text-decoration: line-through;',
               footnoteBackRefDisplay: 'inline',
-              footnoteBackRefInnerText: '[return]',
+              footnoteBackRefInnerText: '^',
               footnoteBackRefPreviousElementDisplay: 'inline',
               useFootnoteMarkerText: false,
             },

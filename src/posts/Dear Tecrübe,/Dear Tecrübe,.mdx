@@ -11,14 +11,31 @@ tags: ['Life lessons', 'Essay']
 title: 'Dear Tecrübe,'
 ---
 
+```diff {1,3-3}
+ // In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
+# h1
 The HTML specification
 is maintained by the W3C.
 
+## h2
 *[HTML]: Hyper Text Markup Language
 *[W3C]: World Wide Web Consortium
 
+# h1
 $\LaTeX$
 
+##### h5
 This is normal body copy.[^also] It includes a couple footnotes.[^thing]
 
 [^also]:
@@ -27,9 +44,9 @@ This is normal body copy.[^also] It includes a couple footnotes.[^thing]
 [^thing]:
   This is another footnote.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DAwG4h8NQgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Dated June 10, 2018
+
 
 > I may not be the person you feel comfortable talking and opening up to, and it is not your fault; and there may be a million things you would rather do, before even thinking of letting me speak to you, but it is my duty to tell you this:
 

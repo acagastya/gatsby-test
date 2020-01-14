@@ -25,3 +25,20 @@ details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
+
+.autolink-header-anchor {
+  border-bottom: none !important;
+  margin-left: -16px;
+  margin-right: 6px;
+  fill: #324996;
+  opacity: 0.3;
+}
+
+h1:hover > .autolink-header-anchor,
+h2:hover > .autolink-header-anchor,
+h3:hover > .autolink-header-anchor,
+h4:hover > .autolink-header-anchor,
+h5:hover > .autolink-header-anchor,
+h6:hover > .autolink-header-anchor {
+  opacity: 0.5;
+}
