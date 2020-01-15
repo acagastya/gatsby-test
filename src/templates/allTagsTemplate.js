@@ -16,9 +16,13 @@ function AllTagsTemplate({ pageContext }) {
             const numerator = postsByTag[tag].length - min;
             const denominator = max - min;
             const num = denominator ? numerator / denominator : 1;
+            const weight = 100 * Math.round((2 * numerator) / denominator + 3);
             return (
               <li key={tag}>
-                <Link to={`/tags/${tag}`} style={{ fontSize: `${1 + num}em` }}>
+                <Link
+                  to={`/tags/${tag}`}
+                  style={{ fontSize: `${1 + num}em`, fontWeight: `${weight}` }}
+                >
                   {tag}
                 </Link>
               </li>

@@ -9,6 +9,7 @@ module.exports = {
     instagram: 'acagastya',
     title: 'Agastya',
     twitter: '@acagastya',
+    username: 'acagastya',
   },
   plugins: [
     'gatsby-plugin-twitter',
