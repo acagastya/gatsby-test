@@ -4,13 +4,14 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
+/* eslint-disable eqeqeq */
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ blog = false, description, ISODate, lang, path, tags, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,8 +19,10 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             author
             description
+            siteName
+            siteUrl
             title
-            twitter
+            username
           }
         }
       }
@@ -27,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-
+  const type = blog ? 'article' : 'website';
   return (
     <Helmet
       htmlAttributes={{
@@ -35,41 +38,43 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s • ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.twitter,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    >
+      <meta name="description" content={metaDescription} />
+      <meta property="og:site_name" content={site.siteMetadata.siteName} />
+      <meta property="og:type" content={type} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      {blog && path ? (
+        <meta
+          property="og:url"
+          content={`${site.siteMetadata.siteUrl}/post${path}`}
+        />
+      ) : (
+        <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
+      )}
+      {blog && <meta property="article:published_time" content={ISODate} />}
+      {blog &&
+        tags.length &&
+        tags.map(tag => <meta property="article:tag" content={tag} />)}
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {path ? (
+        <meta
+          name="twitter:url"
+          content={`${site.siteMetadata.siteUrl}/post${path}`}
+        />
+      ) : (
+        <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />
+      )}
+      {blog && <meta name="twitter:label1" content="Written by" />}
+      {blog && <meta name="twitter:data1" content={site.siteMetadata.author} />}
+      {blog && tags.length && (
+        <meta name="twitter:label2" content="Filed under" />
+      )}
+      {blog && tags.length && (
+        <meta name="twitter:data2" content={tags.join(', ')} />
+      )}
+    </Helmet>
   );
 }
 

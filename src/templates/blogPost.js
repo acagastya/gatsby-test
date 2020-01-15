@@ -21,14 +21,21 @@ function Template({ data, pageContext }) {
   const { next, prev } = pageContext;
   const { mdx } = data;
   const { body, frontmatter } = mdx;
-  const { categories, date, lang, tags, title } = frontmatter;
+  const { categories, date, excerpt, lang, path, tags, title } = frontmatter;
   const { email, username } = data.site.siteMetadata;
   const momentDate = moment(date);
   const parsedDate = momentDate.format('MMM DD, YYYY');
   const ISODate = momentDate.toISOString();
   return (
     <Layout showHeader={false} heading={title}>
-      <SEO title={title} />
+      <SEO
+        blog={true}
+        description={excerpt}
+        ISODate={ISODate}
+        path={path}
+        tags={tags}
+        title={title}
+      />
       <Article
         body={body}
         categories={categories}
@@ -52,7 +59,9 @@ export const query = graphql`
       frontmatter {
         categories
         date
+        excerpt
         lang
+        path
         tags
         title
       }
