@@ -51,7 +51,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: '',
 };
 
 function BoldEntry({ text = '' }) {

@@ -9,7 +9,6 @@ page: 'false'
 path: '/period-rants'
 tags: ['Rantzone']
 title: 'Period Rants'
-
 ---
 
 ## Dated July 4, 2019

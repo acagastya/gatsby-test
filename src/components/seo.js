@@ -81,9 +81,9 @@ function SEO({ blog = false, description, ISODate, lang, path, tags, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: 'en',
   meta: [],
-  description: ``,
+  description: '',
 };
 
 SEO.propTypes = {

@@ -1,97 +1,219 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+## Table of Contents
++ [Agastya's website](#Agastya's-website)
+  + [Conventions](#Conventions)
+      + [Code snippets](#Code-snippets)
+      + [Tags and categories](#Tags-and-categories)
+      + [Content](#Content)
+      + [Frontmatter](#Frontmatter)
+  + [Using plugins](#using-plugins)
+    + [Abbreviations](#Abbreviations)
+    + [Embedder](#Embedder)
+    + [Feed](#Feed)
+    + [Footnotes](#Footnotes)
+    + [Image](#Image)
+    + [KaTeX](#KaTeX)
+    + [MDX](#MDX)
+    + [Mermaid: to add flowcharts](#Mermaid-to-add-flowcharts)
+    + [PrismJS: to add codeblocks](#PrismJS-to-add-codeblocks)
+    + [Twitter embed](#twitter-embed)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+# Agastya's website
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+My personal blog. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog).  Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.  [Minimo theme](https://themes.gohugo.io//theme/minimo/) for [Hugo](https://gohugo.io/) by [Munif Tanjim](https://github.com/MunifTanjim).
 
-## 🚀 Quick start
+To run locally, follow these steps:
 
-1.  **Create a Gatsby site.**
+```bash
+yarn
+yarn start
+```
+Then open [http://0.0.0.0:8000](http://0.0.0.0:8000).
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+## Conventions
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+### Code snippets
 
-1.  **Start developing.**
+In a code snippet of a prompt:
+1. `john@doe λ ` represents a non-superuser.
+1. `root@doe # ` represents a superuser.
+1. If the username is omitted, it represents non-superuser.  Unless otherwise stated, the user does not represent a superuser.
 
-    Navigate into your new site’s directory and start it up.
+### Tags and categories
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+Per [Yoast.com](https://yoast.com/tags-and-categories-difference/ "SEO basics: What is the difference between tags and categories?") ([Archived link](http://web.archive.org/web/20200115221505/https://yoast.com/tags-and-categories-difference/))
 
-1.  **Open the source code and start editing!**
+1. Categories allowed for a broad grouping of post topics.
+1. Tags are used to describe your post in more detail.
 
-    Your site is now running at `http://localhost:8000`!
+### Content
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+1. The blog posts are located at `src/posts`.
+1. Images are located at `src/images`.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+### Frontmatter
 
-## 🧐 What's inside?
+This is how the frontmatter must appear
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```markdown
+---
+categories: Array<String>!
+date: Date(yyyy-mm-dd)!
+draft: Boolean!
+excerpt: String!
+lang: String(ISO 639-1)!
+path: unique(String!)
+tags: Array<String>!
+title: String!
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+---
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## Using plugins
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+### Abbreviations
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+Abbreviations can be added as follows:
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+```diff
+The HTML specification
+is maintained by the W3C.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
++*[HTML]: Hyper Text Markup Language
++*[W3C]:  World Wide Web Consortium
+```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+### Embedder
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+The following services are supported as of January 15, 2020.
+1. CodePen
+2. CodeSandbox
+3. Slides
+4. SoundCloud
+5. Spotify
+6. Streamable
+7. Twitter
+8. YouTube
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+To add an embedd, do it as follows:
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```md
+...
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+https://codepen.io/team/codepen/pen/PNaGbb
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+...
+```
 
-## 🎓 Learning Gatsby
+### Feed
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+RSS feed is available at `/posts/rss.xml`.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+### Footnotes
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+Footnotes can be added as follows:
 
-## 💫 Deploy
+```md
+This is normal body copy.[^also] It includes a couple footnotes.[^thing]
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[^also]:
+  This is a footnote.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+[^thing]:
+  This is another footnote.
+```
+
+### Image
+
+Use `.mdx` instead of `.md` for the blogpost.  In the same directory, create `Image.js`.  In the `.mdx` file write the following code.
+
+```diff
++import Image from './Image.js'
++<Image />
+```
+
+In `Image.js`, copy the content of `src/components/image.js`
+
+Make the following change:
+
+```diff
+...
++placeholderImage: file(relativePath: { eq: "filename.ext" }) {
+...
+```
+
+Note: The file should be located in `src/images`
+
+### KaTeX
+
+KaTeX can be used as:
+
+```md
+$\KaTeX$
+```
+```md
+$$
+\alpha^2 + \beta^2 = \omega^2
+$$
+```
+
+### MDX
+
+In the directory `src/posts`, each post is located in a subdirectory as a `.md` or `.mdx` file.  
+`gatsby-plugin-mdx` is configured to support both the file extensions.
+
+### Mermaid: to add flowcharts
+
+Flowcharts can be added using MermaidJS.  See [examples](https://mermaid-js.github.io/mermaid/#/examples) ([Archived link](http://web.archive.org/web/20200114175304/https://mermaid-js.github.io/mermaid/#/))
+
+```diff
++```mermaid
++graph LR
++install[Install Plugin]
++install --> configure[Configure Plugin]
++configure --> draw[Draw Fancy Diagrams]
++```
+```
+
+### PrismJS: to add codeblocks
+
+To have syntax highlighting in a code block follow the following method:
+
+```diff
++```language
++const foo = 5;
++const bar = 2;
++```
+```
+
+For highlighiting a line:
+
+```diff
++```c{5,7-9}
+```
+
+For shell prompt:
+
+```diff
++```bash{promptUser: alice}{promptHost: dev.localhost}
+```
+
+For inline:
+
+```diff
++I can highlight `css›.some-class { background-color: red }` with CSS syntax.
+```
+
+**Note:** Line number is disabled as of January 15, 2020
+
+### Twitter embed
+
+To embed Tweets, add the tweet link with a blank line at the top and the bottom of the link.  For example:
+
+```md
+...
+
+https://twitter.com/devangishere/status/1115831423963947009
+
+...
+```
