@@ -20,6 +20,7 @@ function Layout({
           description
           email
           github
+          instagram
           title
           twitter
         }
@@ -31,6 +32,7 @@ function Layout({
     description,
     email,
     github,
+    instagram,
     title,
     twitter,
   } = data.site.siteMetadata;
@@ -49,7 +51,13 @@ function Layout({
       <main className="main" id="main">
         <MDXProvider>{children}</MDXProvider>
       </main>
-      <Footer author={author} email={email} github={github} twitter={twitter} />
+      <Footer
+        author={author}
+        email={email}
+        github={github}
+        instagram={instagram}
+        twitter={twitter}
+      />
     </div>
   );
 }

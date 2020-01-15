@@ -2,12 +2,13 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Agastya',
-    description: 'I might talk about computation and programming.',
     author: 'Agastya Chandrakant',
+    description: 'I might talk about computation and programming.',
     email: 'acagastya@outlook.com',
-    twitter: '@acagastya',
     github: 'acagastya',
+    instagram: 'acagastya',
+    title: 'Agastya',
+    twitter: '@acagastya',
   },
   plugins: [
     'gatsby-plugin-twitter',
