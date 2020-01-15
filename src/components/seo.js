@@ -55,7 +55,9 @@ function SEO({ blog = false, description, ISODate, lang, path, tags, title }) {
       {blog && <meta property="article:published_time" content={ISODate} />}
       {blog &&
         tags.length &&
-        tags.map(tag => <meta property="article:tag" content={tag} />)}
+        tags.map(tag => (
+          <meta property="article:tag" content={tag} key={tag} />
+        ))}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {path ? (
