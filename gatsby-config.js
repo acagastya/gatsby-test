@@ -26,6 +26,10 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.mdx', '.md'],
+        defaultLayout: {
+          default: require.resolve('./src/components/layout.js'),
+          posts: require.resolve('./src/templates/blogPost.js'),
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-autolink-headers',
