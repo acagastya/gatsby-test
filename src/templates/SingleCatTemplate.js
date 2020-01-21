@@ -8,7 +8,7 @@ import moment from 'moment';
 function SingleCatTemplate({ pageContext }) {
   const { posts, cat } = pageContext;
   return (
-    <Layout heading={`Category: ${cat}`} slug="category">
+    <Layout heading={`Category: ${cat}`} link="/categories" slug="category">
       <SEO title={`Category: ${cat}`} />
       <div className="list-container">
         <ul className="list">

@@ -9,6 +9,7 @@ import Footer from './footer';
 function Layout({
   children,
   heading = undefined,
+  link,
   showHeader = true,
   slug = undefined,
 }) {
@@ -40,6 +41,7 @@ function Layout({
       </a>
       <Header
         description={description}
+        link={link}
         showHeader={showHeader}
         siteTitle={heading || title}
         slug={slug}

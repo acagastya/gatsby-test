@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Header({ description, showHeader, siteTitle, slug }) {
+function Header({ description, link = '/', showHeader, siteTitle, slug }) {
   return (
     <header id="header" className="header-container">
       <div className="header site-header">
@@ -34,7 +34,7 @@ function Header({ description, showHeader, siteTitle, slug }) {
         {showHeader && (
           <div className="header-info">
             <p className="site-title title">
-              <Link to="/">{siteTitle}</Link>
+              <Link to={link}>{siteTitle}</Link>
             </p>
             {siteTitle == 'Agastya' && (
               <p className="site-description subtitle">{description}</p>

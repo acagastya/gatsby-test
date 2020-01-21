@@ -8,7 +8,7 @@ import moment from 'moment';
 function SingleTagTemplate({ pageContext }) {
   const { posts, tag } = pageContext;
   return (
-    <Layout heading={`Tag: ${tag}`} slug="tag">
+    <Layout heading={`Tag: ${tag}`} link="/tags" slug="tag">
       <SEO title={`Tag: ${tag}`} />
       <div className="list-container">
         <ul className="list">
